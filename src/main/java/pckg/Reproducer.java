@@ -12,6 +12,7 @@ class Foo {
 }
 
 public class Reproducer {
+  // Add some comment
   public <T extends Foo> void foo(List<T> subList, List<T> completeListOfElements) {
     final Optional<T> lastElement = subList
       .stream()
